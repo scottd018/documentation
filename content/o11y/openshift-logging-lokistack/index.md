@@ -1,12 +1,16 @@
 ---
 date: '2021-07-27'
-title: Configuring OpenShift Logging using LokiStack on ROSA and (soon) ARO
+title: Configuring OpenShift Logging using LokiStack on ROSA
 tags: ["Observability", "OCP"]
 authors:
   - Andy Repton
 ---
 
 A guide to shipping logs and metrics on OpenShift using the new LokiStack setup. Recently, the default logging system with OpenShift swapped from ElasticSearch/FluentD/Kibana to a system based on LokiStack/Vector/OCP Console. LokiStack requires an object store in order to function, and this guide is designed to walk the user through the steps required to set this up.
+
+This guide is specific to Azure Red Hat OpenShift.  For other platforms see:
+
+  - [ARO](https://cloud.redhat.com/experts/o11y/openshift-logging-lokistack-aro/)
 
 ## Overview of the components of OpenShift Cluster Logging
 
